@@ -1,0 +1,31 @@
+.pete{
+    background-image: url(boiler_pete.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top:0px;
+    left:0px;
+    position:absolute;
+    width:200px;
+    height:200px;
+    animation-duration: 5s;
+    animation-name: ani;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    
+}
+@keyframes ani {
+    0% {left:0px; top:0px;}
+    15% {top: 40%; right:40%;}
+    30% {left: 80%; top:65%;}
+    45% {left:0px; bottom:0px;}
+    60% {right:80%; top:65%;}
+    75% {left:80%; bottom:80%;}
+    90% {left:40%; top:40%;}
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
